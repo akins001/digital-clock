@@ -1,0 +1,39 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  #clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10em;
+    color: #fff;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+    text-shadow: 0 0 10px #e2dada, 0 0 20px #cac6c6, 0 0 30px #bbb9b9, 0 0 40px crimson, 0 0 70px crimson, 0 0 80px crimson, 0 0 100px crimson, 0 0 150px rgb(0, 0, 0);
+    box-shadow: 0 0 10px #c0bbbb, 0 0 20px #cccaca, 0 0 30px #adacac, 0 0 40px crimson, 0 0 26px crimson, 0 0 80px crimson, 0 0 100px crimson, 0 0 150px rgb(56, 58, 58);
+  }
+  
+  #clock span {
+    padding: 0.1em 0.5em;
+  }
+  
+  #clock span:not(:last-child) {
+    border-right: 2px solid #fff;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
